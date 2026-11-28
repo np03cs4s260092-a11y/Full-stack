@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LearnHub</title>
+    <title>NeXora</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>LearnHub</h1>
-        <p>Your place to learn web development</p>
+        <h1>NeXora</h1>
+        <p>Learn Beyond Limits</p>
     </header>
 
     <nav>
@@ -19,57 +18,93 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#media">Media</a></li>
+            <li><a href="#plan">Study Plan</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="page">
+    <div class="wrapper">
 
         <main>
 
             <section id="home">
                 <h2>About Us</h2>
-                <p>LearnHub is a website for students. You can find courses, videos and audio lessons here.</p>
+                <p>NeXora provides simple tutorials and resources to make learning easier.</p>
             </section>
 
             <section id="courses">
                 <h2>Courses</h2>
-                <div class="cards">
-                    <article class="card">
+                <div class="course-area">
+                    <article class="course-box">
                         <img src="images/html.png" alt="HTML course">
                         <h3>HTML Basics</h3>
                         <p>Learn how to build a web page.</p>
                         <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">Read more</a>
                     </article>
 
-                    <article class="card">
+                    <article class="course-box">
                         <img src="images/css.png" alt="CSS course">
                         <h3>CSS Styling</h3>
                         <p>Learn how to add colors and layout.</p>
                         <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">Read more</a>
                     </article>
 
-                    <article class="card">
+                    <article class="course-box">
                         <img src="images/study.png" alt="Study tips">
                         <h3>Study Tips</h3>
                         <p>Learn how to study in a better way.</p>
-                        <a href="#home">Read more</a>
+                        <a href="https://learningcenter.unc.edu/tips-and-tools/studying-101-study-smarter-not-harder/">Read more</a>
                     </article>
                 </div>
-   </section>
+            </section>
 
             <section id="media">
                 <h2>Video and Audio</h2>
 
-                <video width="560" height="315" controls>
+                <video controls>
                     <source src="video/intro.mp4" type="video/mp4">
                 </video>
 
+                <audio controls>
+                    <source src="audio/lesson.mp3" type="audio/mpeg">
+                </audio>
+            </section>
 
-                <figure>
-                    <img src="images/library.png" alt="A library">
-                    <figcaption>A quiet library is good for study.</figcaption>
-                </figure>
+            <section id="plan">
+                <h2>Weekly Study Plan</h2>
+                <p>Here is a simple plan that you can follow every week.</p>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>What to study</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML tags</td>
+                        <td>1 hour</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>CSS colors and spacing</td>
+                        <td>1 hour</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Flexbox Froggy</td>
+                        <td>30 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Grid Garden</td>
+                        <td>30 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Revision</td>
+                        <td>1 hour</td>
+                    </tr>
+                </table>
             </section>
 
         </main>
@@ -77,27 +112,27 @@
         <aside>
             <h2>Announcements</h2>
             <ul>
-                <li>Week 1 workshop is open.</li>
-                <li>New video is coming soon.</li>
+                <li>This is my Week 1 Workshop.</li>
+                <li>Created By Alence Neupane (np03cs4s260092).</li>
             </ul>
         </aside>
 
     </div>
 
     <footer id="contact">
-        <div class="footer-box">
-            <h3>LearnHub</h3>
-            <p>A student learning platform.</p>
+        <div class="foot-col">
+            <h3>NeXora</h3>
+            <p>Learn Beyond Limits</p>
         </div>
-        <div class="footer-box">
+        <div class="foot-col">
             <h3>Contact</h3>
-            <p>Alence@learnhub.com</p>
+            <p>AlenceNeupane@NeXora.com</p>
         </div>
-        <div class="footer-box">
+        <div class="foot-col">
             <h3>Links</h3>
             <p><a href="#home">Home</a></p>
         </div>
-        <p class="copy">2026 LearnHub</p>
+        <p class="foot-copy">@2026 -- Alence Neupane -- np03cs4s260092 --</p>
     </footer>
 
 </body>

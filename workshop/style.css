@@ -1,212 +1,217 @@
-/* Basic reset */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333333;
-    line-height: 1.6;
+    margin: 0;
+    background-color: #14141f;
+    color: #eeeeee;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 img {
     max-width: 100%;
 }
 
-/* Header */
+/* ===== top part ===== */
 header {
-    background-color: #264653;
-    color: white;
+    background-color: black;
+    border-bottom: 4px solid gold;
     text-align: center;
-    padding: 30px 15px;
+    padding: 20px;
 }
 
 header h1 {
-    font-size: 40px;
+    margin: 0;
+    color: gold;
+    font-size: 30px;
+    letter-spacing: 3px;
 }
 
-/* Navigation (Flexbox) */
+header p {
+    margin: 5px 0 0 0;
+    color: #bbbbbb;
+    font-style: italic;
+}
+
+/* ===== menu (flexbox) ===== */
 nav {
-    background-color: #2a9d8f;
+    background-color: #5a189a;
 }
 
 nav ul {
+    margin: 0;
+    padding: 10px;
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 15px;
+    gap: 8px;
 }
 
 nav a {
+    display: block;
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 6px 14px;
 }
 
 nav a:hover {
-    background-color: #264653;
+    background-color: gold;
+    color: black;
 }
 
-/* Banner */
-.banner {
-    text-align: center;
-    margin: 20px;
-}
-
-.banner figcaption {
-    font-style: italic;
-    margin-top: 8px;
-}
-
-/* Main layout (Grid): content on left, sidebar on right */
-.page {
+/* ===== main part and sidebar (grid) ===== */
+.wrapper {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 12px;
 }
 
 main section {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #dddddd;
-}
-
-h2 {
-    color: #264653;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #e76f51;
-    padding-bottom: 5px;
-}
-
-h3 {
-    margin: 10px 0 5px 0;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-ul, ol {
-    margin-left: 25px;
-    margin-bottom: 10px;
-}
-
-a {
-    color: #e76f51;
-}
-
-/* Cards (Flexbox) */
-.cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 15px;
-}
-
-.card {
-    background-color: #f9f9f9;
-    border: 1px solid #cccccc;
-    border-radius: 8px;
+    background-color: #1f1f30;
+    border-left: 5px solid gold;
     padding: 15px;
-    width: 30%;
-}
-
-.card:hover {
-    background-color: #ffe8d6;
-    transform: translateY(-5px);
-}
-
-/* Media section */
-video, audio {
-    width: 100%;
     margin-bottom: 15px;
 }
 
-figure {
-    margin-top: 15px;
+aside {
+    background-color: #2a2a40;
+    border: 2px dashed #9d4edd;
+    padding: 15px;
+    align-self: start;
+}
+
+h2 {
+    margin-top: 0;
+    color: gold;
+}
+
+h3 {
+    color: #c77dff;
+}
+
+a {
+    color: #80ffdb;
+}
+
+/* ===== course boxes (grid) ===== */
+.course-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.course-box {
+    background-color: #2a2a40;
+    border-top: 4px solid #9d4edd;
+    padding: 12px;
+}
+
+.course-box:hover {
+    background-color: #33334d;
+    border-top-color: gold;
+}
+
+/* ===== video, audio, picture ===== */
+video, audio {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 figcaption {
-    font-size: 14px;
-    color: #555555;
+    font-size: 13px;
+    color: #aaaaaa;
+    font-style: italic;
 }
 
-/* Sidebar */
-aside {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #dddddd;
-    height: fit-content;
+/* ===== study plan table ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-/* Footer (Grid) */
-footer {
-    background-color: #264653;
+th {
+    background-color: #5a189a;
     color: white;
-    padding: 30px 20px;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #444444;
+}
+
+tr:hover td {
+    background-color: #2a2a40;
+}
+
+/* ===== bottom part (grid) ===== */
+footer {
+    background-color: black;
+    border-top: 4px solid gold;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
 }
 
-footer a {
-    color: #ffd6a5;
+footer h3 {
+    margin-top: 0;
+    color: gold;
 }
 
-/* This text spans all 3 columns */
-.copy {
-    grid-column: 1 / 4;
+.foot-copy {
     text-align: center;
-    border-top: 1px solid #aaaaaa;
-    padding-top: 15px;
+    color: #999999;
 }
 
-/* Tablet screens */
-@media (max-width: 900px) {
-    .card {
-        width: 45%;
-    }
+/* ===== tablet, 768px and up ===== */
+@media (min-width: 768px) {
 
     header h1 {
-        font-size: 32px;
-    }
-}
-
-/* Mobile screens */
-@media (max-width: 600px) {
-    .page {
-        grid-template-columns: 1fr;
+        font-size: 40px;
     }
 
     nav ul {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        gap: 15px;
     }
 
-    .card {
-        width: 100%;
+    .wrapper {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .course-area {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     footer {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .copy {
-        grid-column: 1 / 2;
+    .foot-copy {
+        grid-column: 1 / 4;
+    }
+}
+
+/* ===== laptop / desktop, 1200px and up ===== */
+@media (min-width: 1200px) {
+
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .course-area {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
